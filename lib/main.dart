@@ -58,20 +58,17 @@ class NotificationController {
   @pragma('vm:entry-point')
   static Future<void> onActionReceivedMethod(
       ReceivedAction receivedAction) async {
-
-    if(
-      receivedAction.actionType == ActionType.SilentAction ||
-      receivedAction.actionType == ActionType.SilentBackgroundAction
-    ){
+    if (receivedAction.actionType == ActionType.SilentAction ||
+        receivedAction.actionType == ActionType.SilentBackgroundAction) {
       // For background actions, you must hold the execution until the end
-      print('Message sent via notification input: "${receivedAction.buttonKeyInput}"');
+      print(
+          'Message sent via notification input: "${receivedAction.buttonKeyInput}"');
       await executeLongTaskInBackground();
-    }
-    else {
+    } else {
       MyApp.navigatorKey.currentState?.pushNamedAndRemoveUntil(
           '/notification-page',
-              (route) =>
-          (route.settings.name != '/notification-page') || route.isFirst,
+          (route) =>
+              (route.settings.name != '/notification-page') || route.isFirst,
           arguments: receivedAction);
     }
   }
@@ -178,8 +175,7 @@ class NotificationController {
               key: 'REPLY',
               label: 'Reply Message',
               requireInputText: true,
-              actionType: ActionType.SilentAction
-          ),
+              actionType: ActionType.SilentAction),
           NotificationActionButton(
               key: 'DISMISS',
               label: 'Dismiss',
