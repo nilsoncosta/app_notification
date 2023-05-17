@@ -42,6 +42,7 @@ dependencies:
   url_launcher: ^6.0.3
   intl: ^0.17.0
   palette_generator: ^0.3.0
+  flutter_native_splash: ^2.3.0
 
 dev_dependencies:
   flutter_test:
@@ -54,16 +55,19 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
 
-  flutter_launcher_icons: ^0.9.0
+#   flutter_launcher_icons: ^0.9.0
 
-flutter_icons:
-  ios: true
-  android: true
-  image_path_ios: "assets/launcher/icon.png"
-  image_path_android: "assets/launcher/icon.png"
-  adaptive_icon_background: "assets/launcher/background.png"
-  adaptive_icon_foreground: "assets/launcher/foreground.png"
+# flutter_icons:
+#   ios: true
+#   android: true
+#   image_path_ios: "assets/launcher/icon.png"
+#   image_path_android: "assets/launcher/icon.png"
+#   adaptive_icon_background: "assets/launcher/background.png"
+#   adaptive_icon_foreground: "assets/launcher/foreground.png"
 
+flutter_native_splash:
+  color: "#000000"
+  image: assets/images/ic_launcher.png
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -76,23 +80,5 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/awesome-notifications-logo-color.png
-    - assets/images/awesome-notifications-logo-black.png
-    - assets/images/awesome-notifications-logo-white.png
-    - assets/images/girl-phonecall.jpg
-    - assets/images/animated-bell.gif
-    - assets/images/animated-clock.gif
-    - assets/images/animated-warning.gif
-    - assets/images/placeholder.gif
-    - assets/images/happy-dogs.jpg
-    - assets/images/balloons-in-sky.jpg
-    - assets/images/android-bg-worker.jpg
-    - assets/images/fireman-hero.jpg
-    - assets/images/delivery.jpeg
-    - assets/images/melted-clock.png
-    - assets/images/rock-disc.jpg
-    - assets/images/classic-disc.jpg
-    - assets/images/dj-disc.jpg
-    - assets/images/80s-disc.jpg
-    - assets/images/remix-disc.jpg
-    - assets/images/old-disc.jpg
+    - assets/images/
+    - assets/icons/
