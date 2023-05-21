@@ -42,7 +42,7 @@ dependencies:
   url_launcher: ^6.0.3
   intl: ^0.17.0
   palette_generator: ^0.3.0
-  # flutter_native_splash: ^2.3.0
+  flutter_native_splash: ^2.3.0
 
 dev_dependencies:
   flutter_test:
@@ -55,19 +55,19 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
 
-  flutter_launcher_icons: ^0.9.0
+  # flutter_launcher_icons: ^0.9.0
 
-flutter_icons:
-  image_path: "assets/icons/icon.png"
-  ios: true
-  android: true
+# flutter_icons:
+#   image_path: "assets/icons/icon.png"
+#   ios: true
+#   android: true
   #image_path_android: "assets/launcher/icon.png"
   # adaptive_icon_background: "assets/launcher/background.png"
   # adaptive_icon_foreground: "assets/launcher/foreground.png"
 
-# flutter_native_splash:
-#   color: "#000000"
-#   image: assets/images/ic_launcher.png
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/ic_launcher.png
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
